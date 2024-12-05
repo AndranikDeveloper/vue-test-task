@@ -1,0 +1,41 @@
+.content {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content textarea {
+  max-width: 580px;
+  width: 100%;
+  resize: none;
+  height: auto;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.content textarea.isValid {
+  border-color: red;
+}
+
+.isValid {
+  border-color: red;
+}
+.errorMessage {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.content button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
